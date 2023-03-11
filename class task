@@ -1,0 +1,4 @@
+<?php
+$name = "my name is hydee"
+echo $name
+?>
