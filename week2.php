@@ -1,18 +1,15 @@
 <?php
-$voters = do you have "PVC";
-if($voters ="PVC"){
-    echo"voter eligible to vote";
-}
 $voters_age = 18;
-
-if($voters_age<= 18){
- echo "voter is not up to the age to vote";
-}elseif ($voters_age>= 18) {
-    echo"voter is eligible to vote"
+$voters_voting_ward = 020;
+$voters_has_PVC = true;
+ if($voters_age <18){
+ echo"voter is not up to the age to vote";
 }
-$voter_ward = 020;
-if($voter_ward == 020){
-    echo"voter is eligible to vote" 
+elseif($voters_voting_ward < 020){
+  echo"voter is not in the right ward";
+} elseif ($voters_has_PVC = false){
+ echo"voter do not have PVC";
+}else{
+ echo"you are eligible to vote";
 }
-
 ?>
